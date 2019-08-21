@@ -309,14 +309,182 @@ template {
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  font-family: "Open Sans", sans-serif; }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
 body {
-  color: #F9C802;
-  background: #000; }
+  background: none; }
+
+.header {
+  height: 180px;
+  width: 100%;
+  padding: 25px 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .header__a {
+    font-family: "Open San", sans-serif;
+    font-weight: 500;
+    line-height: 25px;
+    font-size: 1rem;
+    color: #0f3074;
+    text-decoration: none; }
+  .header__cont {
+    margin: auto auto;
+    max-width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .header__cont--logo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .header__cont--logo-png {
+        width: 195px;
+        height: 125px; }
+    .header__cont--mail {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding-right: 30px; }
+      .header__cont--mail-email {
+        margin: 0 50px 0 0; }
+
+.phoneSvg {
+  fill: blue;
+  width: 1rem; }
+
+.st0 {
+  height: 10px;
+  width: 10px;
+  fill: red; }
+
+.navigation {
+  background-color: #2d3e50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .navigation__cont {
+    width: 1200px; }
+    .navigation__cont--contUl {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      padding: 0;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+    .navigation__cont--item {
+      list-style-type: none;
+      margin: 15px 15px; }
+      .navigation__cont--item--a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 15px; }
+        .navigation__cont--item--a:hover {
+          color: #19adee; }
+
+.picture {
+  height: 250px; }
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .main__contener {
+    width: 700px;
+    margin: 10px, auto; }
+    .main__contener--offerHeader {
+      color: #2d3e50;
+      font-family: Roboto;
+      text-transform: uppercase;
+      font-size: 32px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-align: center;
+      padding: 40px 0 20px 0;
+      border-bottom: solid 2px #19adee; }
+    .main__contener--svgLink {
+      display: -ms-grid;
+      display: grid; }
+      .main__contener--svgLink--svgBox {
+        color: #2d3e50;
+        font-family: Roboto;
+        text-transform: uppercase; }
+
+.footer {
+  background-color: #19adee; }
+  .footer__cont {
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 0 1rem 0;
+    max-width: 1200px; }
+    .footer__cont--1 {
+      font-family: Roboto;
+      text-transform: uppercase;
+      font-size: 36px;
+      font-weight: 600;
+      letter-spacing: 1.3px;
+      color: white; }
+    .footer__cont--2 {
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 1.3px;
+      color: white; }
+
+.break {
+  min-height: 80px;
+  background-color: white; }
+
+.bootom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 15px;
+  height: 40px;
+  width: 100%;
+  background-color: #19adee;
+  color: white; }
+  .bootom__1 {
+    padding: 10px 15px;
+    font-size: 12px; }
+  .bootom__2 {
+    padding: 10px 15px;
+    font-size: 12px; }
 
 /*# sourceMappingURL=main.css.map */
