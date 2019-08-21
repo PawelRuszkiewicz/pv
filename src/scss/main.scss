@@ -91,40 +91,92 @@ body {
         text-transform: uppercase;
         font-size: 14px;
         padding: 15px;
-        &:hover{
+        &:hover {
           color: $blue;
         }
-
       }
     }
   }
 }
-// footer
-.footer{
-background-color:$blue;
 
-  &__cont{
+// background  image
+.picture{
+height: 250px;
 
-    &cont--1{
+}
 
+
+// Main
+.main {
+  display: flex;
+  justify-content: center;
+
+  &__contener {
+    width: $mainContener;
+    margin: 10px, auto;
+
+    &--offerHeader {
+      // nasza oferta
+      color: $bkgNavColor;
+      font-family: Roboto;
+      text-transform: uppercase;
+      font-size: 32px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-align: center;
+      padding: 40px 0 20px 0;
+      border-bottom: solid 2px $blue;
     }
-    &cont--2{
 
+    &--svgLink {
+      // contener svg main
+      display: grid;
 
+      &--svgBox {
+        // element svg & text
+        color: $bkgNavColor;
+        font-family: Roboto;
+        text-transform: uppercase;
+      }
     }
   }
 }
 
+// footer
+.footer {
+  background-color: $blue;
 
-.break{
-  min-height: 80px;
-  background-color:$white;
+  &__cont {
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 0 1rem 0;
+    max-width: $windowSize;
+    &--1 {
+      font-family: Roboto;
+      text-transform: uppercase;
+      font-size: 36px;
+      font-weight: 600;
+      letter-spacing: 1.3px;
+      color: $white;
+    }
+    &--2 {
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 1.3px;
+      color: $white;
+    }
+  }
 }
 
-
+.break {
+  // przerwa w stopce
+  min-height: 80px;
+  background-color: $white;
+}
 
 // bootom of page
-.bootom{
+.bootom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -133,10 +185,10 @@ background-color:$blue;
   width: 100%;
   background-color: $blue;
   color: $white;
-  &__1{
+  &__1 {
     @include bootom;
   }
-  &__2{
+  &__2 {
     @include bootom;
   }
 }
