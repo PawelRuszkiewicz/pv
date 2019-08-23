@@ -91,6 +91,7 @@ width: 100%;
       margin: 1rem .6rem;
 
       &--a {
+        touch-action: manipulation;
         text-decoration: none;
         color: white;
         text-transform: uppercase;
