@@ -20,9 +20,9 @@ body {
   font-size: 16px;
 }
 .header {
-  height: 180px;
+  height: 9rem;
   width: 100%;
-  padding: 25px 15px;
+  padding: 0.5rem 1rem;
   align-items: center;
   &__a {
     font-family: "Open San", sans-serif;
@@ -49,7 +49,7 @@ body {
     }
     &--mail {
       display: flex;
-      padding-right: 30px;
+      padding: 1rem 1.9rem;
 
       &-email {
         margin: 0 50px 0 0;
@@ -72,6 +72,8 @@ body {
   background-color: $bkgNavColor;
   display: flex;
   justify-content: center;
+  position: sticky;
+  top: 0;
 
   &__cont {
     width: $windowSize;
@@ -81,6 +83,7 @@ body {
       flex-wrap: wrap;
       justify-content: flex-start;
       padding: 0;
+      margin: 0;
       flex-direction: row;
     }
     &--item {
@@ -103,8 +106,12 @@ body {
 
 // background  image
 .picture {
-  background-image: url("assets/img/borderMainRes.png");
-  height: 250px;
+height: 100%;
+width: 100%;
+&__img{
+  width: 100%;
+  height: 100%;
+}
 }
 
 // Main
