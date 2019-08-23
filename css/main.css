@@ -486,6 +486,16 @@ body {
   border-bottom: solid 1px #19adee;
   margin: 1.5rem 0 2rem; }
 
+.main__list {
+  list-style-type: circle;
+  text-align: left; }
+  .main__list--item {
+    color: #2d3e50;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: lowercase;
+    font-weight: 200;
+    font-size: .9rem; }
+
 .footer {
   background-color: #19adee; }
   .footer__cont {
@@ -494,14 +504,14 @@ body {
     padding: 2rem 0 1rem 0;
     max-width: 1200px; }
     .footer__cont--1 {
-      font-family: Roboto;
+      font-family: 'Roboto', sans-serif;
       text-transform: uppercase;
       font-size: 36px;
       font-weight: 600;
       letter-spacing: 1.3px;
       color: white; }
     .footer__cont--2 {
-      font-family: Roboto;
+      font-family: 'Roboto', sans-serif;
       font-size: 1rem;
       font-weight: 400;
       letter-spacing: 1.3px;
