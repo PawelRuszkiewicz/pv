@@ -493,7 +493,7 @@ body {
     color: #2d3e50;
     font-family: 'Open Sans', sans-serif;
     text-transform: lowercase;
-    font-weight: 200;
+    font-weight: 400;
     font-size: .9rem; }
 
 .footer {
@@ -511,7 +511,7 @@ body {
       letter-spacing: 1.3px;
       color: white; }
     .footer__cont--2 {
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-size: 1rem;
       font-weight: 400;
       letter-spacing: 1.3px;
