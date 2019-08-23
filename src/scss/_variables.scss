@@ -2,9 +2,19 @@ $violet: rgb(255, 255, 255);
 $blue: rgb(25, 173, 238);
 $white:white;
 $windowSize: 1200px;
-$mainContener: 700px;
+$mainContener: 1000px;
 $bkgNavColor: #2d3e50;
 @mixin bootom {
     padding: 10px 15px;
     font-size: 12px;
+}
+@mixin mainContener {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    min-height: 10rem;
+    // min-width: 6.25rem;
+    border-bottom: solid 1px $blue;
+    margin: 1.5rem 0 2rem;
+
 }
