@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,800|Roboto:400,500,700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -319,12 +320,13 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: none; }
+  background: none;
+  font-size: 16px; }
 
 .header {
-  height: 180px;
+  height: 9rem;
   width: 100%;
-  padding: 25px 15px;
+  padding: 0.5rem 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
@@ -359,7 +361,7 @@ body {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      padding-right: 30px; }
+      padding: 1rem 1.9rem; }
       .header__cont--mail-email {
         margin: 0 50px 0 0; }
 
@@ -379,7 +381,11 @@ body {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%; }
   .navigation__cont {
     width: 1200px; }
     .navigation__cont--contUl {
@@ -388,17 +394,18 @@ body {
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
       padding: 0;
+      margin: 0;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row; }
     .navigation__cont--item {
       list-style-type: none;
-      margin: 15px 15px; }
+      margin: 1rem .6rem; }
       .navigation__cont--item--a {
         text-decoration: none;
         color: white;
@@ -409,7 +416,11 @@ body {
           color: #19adee; }
 
 .picture {
-  height: 250px; }
+  height: 100%;
+  width: 100%; }
+  .picture__img {
+    width: 100%;
+    height: 100%; }
 
 .main {
   display: -webkit-box;
@@ -419,25 +430,61 @@ body {
       -ms-flex-pack: center;
           justify-content: center; }
   .main__contener {
-    width: 700px;
+    width: 1000px;
     margin: 10px, auto; }
     .main__contener--offerHeader {
       color: #2d3e50;
       font-family: Roboto;
       text-transform: uppercase;
-      font-size: 32px;
+      font-size: 2rem;
       font-weight: 600;
       letter-spacing: 1.5px;
       text-align: center;
-      padding: 40px 0 20px 0;
-      border-bottom: solid 2px #19adee; }
+      padding: 2.5rem 0 4rem 0;
+      border-bottom: solid 1.5px #19adee;
+      margin-bottom: 2rem; }
     .main__contener--svgLink {
-      display: -ms-grid;
-      display: grid; }
-      .main__contener--svgLink--svgBox {
-        color: #2d3e50;
+      display: block; }
+      .main__contener--svgLink-svgBox {
+        color: #19adee;
         font-family: Roboto;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        text-align: center;
+        width: 15rem;
+        font-weight: 600;
+        line-height: 1.25rem;
+        font-size: 1.25rem;
+        padding: 0.5rem 0; }
+
+.contener__first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 10rem;
+  border-bottom: solid 1px #19adee;
+  margin: 1.5rem 0 2rem; }
+
+.contener__second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 10rem;
+  border-bottom: solid 1px #19adee;
+  margin: 1.5rem 0 2rem; }
 
 .footer {
   background-color: #19adee; }
@@ -455,7 +502,7 @@ body {
       color: white; }
     .footer__cont--2 {
       font-family: Roboto;
-      font-size: 14px;
+      font-size: 1rem;
       font-weight: 400;
       letter-spacing: 1.3px;
       color: white; }
