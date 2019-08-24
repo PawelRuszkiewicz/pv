@@ -5,7 +5,7 @@ $windowSize: 1200px;
 $mainContener: 1000px;
 $bkgNavColor: #2d3e50;
 $tabletSize: 800px;
-$phoneSize: 850px;
+$phoneSize: 650px;
 @mixin bootom {
     padding: 10px 15px;
     font-size: 12px;
@@ -15,7 +15,16 @@ $phoneSize: 850px;
     justify-content: space-between;
     flex-direction: row;
     min-height: 10rem;
-    // min-width: 6.25rem;
+    border-bottom: solid 1px $blue;
+    margin: 1.5rem 0 2rem;
+
+}
+@mixin mainContenerPhone {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    min-height: 10rem;
     border-bottom: solid 1px $blue;
     margin: 1.5rem 0 2rem;
 
