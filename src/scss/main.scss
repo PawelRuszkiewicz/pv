@@ -39,9 +39,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    @media screen and (max-width: $phoneSize) {
-      flex-direction: column;
-    }
     &--logo {
       display: flex;
       &-png {
@@ -88,17 +85,10 @@ body {
       padding: 0;
       margin: 0;
       flex-direction: row;
-      @media screen and (max-width: $phoneSize) {
-        flex-direction: column;
-        justify-content: center;
-      }
     }
     &--item {
       list-style-type: none;
       margin: 1rem 0.6rem;
-      @media screen and (max-width: $phoneSize) {
-        text-align: center;
-      }
       &--a {
         touch-action: manipulation;
         text-decoration: none;
@@ -164,11 +154,11 @@ body {
         font-family: Roboto;
         text-transform: uppercase;
         text-align: center;
-        width: 15rem;
+        width: 100%;
         font-weight: 600;
         line-height: 1.25rem;
         font-size: 1.25rem;
-        padding: 0.5rem 0;
+        padding: 0.5rem 2rem;
       }
     }
   }
@@ -244,7 +234,7 @@ body {
   }
 }
 // *********************************************************
-// Media dla telefonów max rozmiar wilkośc tel.
+// Media dla telefonów max rozmiar wielkosc okma 650px.
 // **********************************************************
 @media screen and (max-width: $phoneSize) {
   .header {
@@ -277,100 +267,95 @@ body {
         &-email {
           margin: 0;
         }
-        &--phone {
+      }
+    }
+  }
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  width: 100%;
+  &__cont {
+    width: $windowSize;
+
+    &--contUl {
+      display: none;
+      justify-content: space-around;
+      padding: 0;
+      margin: 0;
+
+      flex-direction: column;
+      justify-content: center;
+    }
+    &--item {
+      text-align: center;
+
+      &--a {
+        touch-action: manipulation;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 0.93rem;
+        &:hover {
+          color: $blue;
         }
       }
     }
   }
+}
+.mainSwither__js{
+  // color: $white;
+  // font-size: 3rem;
+  // padding: 0 1rem;
+  // justify-content: flex-end;
+  // // display:flex;
+  display: flex;
+}
 
-  }
-  .navigation {
+// Main
+.main {
+  display: flex;
+  justify-content: center;
 
-    display: flex;
-    justify-content: center;
-    position: relative;
-
-    width: 100%;
-    &__cont {
-      width: $windowSize;
-
-      &--contUl {
-        display: flex;
-        justify-content: space-around;
-        padding: 0;
-        margin: 0;
-
-        flex-direction: column;
-        justify-content: center;
-      }
-      &--item {
-        text-align: center;
-
-        &--a {
-          touch-action: manipulation;
-          text-decoration: none;
-          font-size: 1rem;
-          padding:0.93rem;
-          &:hover {
-            color: $blue;
-          }
-        }
-      }
+  &__contener {
+    max-width: $mainContener;
+    &-svgBox {
+      margin: 0 auto;
     }
   }
-  .mainSwither__js--visible {
-    // color: $white;
-    // font-size: 3rem;
-    // padding: 0 1rem;
-    // justify-content: flex-end;
-    // // display:flex;
-    display: flex;
+}
+
+//main contener
+.contener__first {
+  @include mainContenerPhone;
+}
+.contener__second {
+  @include mainContenerPhone;
+}
+
+.main__list {
+  list-style-type: circle;
+  text-align: left;
+}
+
+// footer
+.footer {
+  &__cont {
+    padding: 2rem 1rem 1rem 1rem;
   }
+}
 
-  // Main
-  .main {
-    display: flex;
-    justify-content: center;
+.break {
+  // przerwa w stopce
+  min-height: 80px;
+  background-color: $white;
+}
 
-    &__contener {
-      max-width: $mainContener;
-        &-svgBox {
-          margin: 0 auto;
-        }
-      }
-    }
-
-  //main contener
-  .contener__first {
-    @include mainContenerPhone;
-  }
-  .contener__second {
-    @include mainContenerPhone;
-  }
-
-  .main__list {
-    list-style-type: circle;
-    text-align: left;
-  }
-
-  // footer
- .footer {
-
-    &__cont {
-     padding: 2rem 1rem 1rem 1rem;
-    }
-  }
-
-  .break {
-    // przerwa w stopce
-    min-height: 80px;
-    background-color: $white;
-  }
-
-  // bootom of page
-  .bootom {
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-  }
-
+// bootom of page
+.bootom {
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+}
