@@ -105,9 +105,13 @@ body {
 .submenu{
 
 padding: 1rem;
-display:flex;
+display:none;
 flex-direction: column;
-
+position: static;
+top:0;
+&-js{
+  display: flex;
+}
   &__item{
 list-style-type: none;
 padding-bottom: 5px;
