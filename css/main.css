@@ -385,6 +385,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  min-height: 4rem;
   width: 100%; }
   .navigation__cont {
     width: 1200px; }
@@ -552,7 +553,7 @@ body {
     padding: 10px 15px;
     font-size: 12px; }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   .header {
     height: 100%;
     padding: 0.5rem 1rem;
@@ -624,6 +625,10 @@ body {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; }
+        .navigation__cont--contUl-visible {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
       .navigation__cont--item {
         text-align: center; }
         .navigation__cont--item--a {
