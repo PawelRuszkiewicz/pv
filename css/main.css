@@ -308,6 +308,100 @@ template {
 [hidden] {
   display: none; }
 
+.pictureAutomatyka {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  height: 25rem;
+  background-image: url("/assets/img/Fotolia_86887730_Subscription_Monthly_XL-1024x683.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center -3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  @media screen and (max-width: 700px) {
+    .pictureAutomatyka {
+      max-height: 10rem; } }
+
+.textOnBc {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.autoprzem {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.spanBold {
+  font-weight: 700; }
+
+.articleSub {
+  max-width: 100%; }
+  .articleSub__h2 {
+    max-width: 1000px;
+    text-align: center; }
+  .articleSub__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 2rem 1rem 0 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    @media screen and (max-width: 700px) {
+      .articleSub__section {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+    .articleSub__section--h {
+      width: 100%;
+      font-weight: 600;
+      text-align: center;
+      text-transform: uppercase;
+      padding: .5rem 1rem .5rem;
+      border-bottom: solid 1.5px #19adee;
+      border-top: solid 0.5px #19adee; }
+    .articleSub__section--li {
+      padding: 1rem 1rem 1rem 0;
+      text-align: justify; }
+    .articleSub__section--inSection {
+      max-width: 45%;
+      min-width: 18.75rem;
+      overflow: hidden;
+      padding: 0.5rem 1rem;
+      text-align: justify; }
+      @media screen and (max-width: 700px) {
+        .articleSub__section--inSection {
+          width: 100%;
+          max-width: 100%;
+          text-align: justify; } }
+
+.inSection__img {
+  max-width: 45%;
+  overflow: hidden; }
+
+.section--img {
+  min-width: 18.75rem;
+  padding: 0.5rem 1rem; }
+  @media screen and (max-width: 700px) {
+    .section--img {
+      display: none; } }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -409,12 +503,15 @@ body {
         color: white;
         text-transform: uppercase;
         font-size: 1rem;
-        padding: 1rem; }
+        padding: 1rem;
+        -webkit-transition: border-bottom 0.8s ease-out;
+        -o-transition: border-bottom 0.8s ease-out;
+        transition: border-bottom 0.8s ease-out; }
         .navigation__cont--item--a:hover {
           color: #19adee; }
           @media screen and (max-width: 700px) {
             .navigation__cont--item--a:hover {
-              border-bottom: solid 2px #6cc8e9; } }
+              border-bottom: solid 1px #6cc8e9; } }
 
 .submenu {
   padding: 1rem; }
@@ -425,7 +522,10 @@ body {
   .submenu__item {
     list-style-type: none;
     padding-bottom: 5px;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    -webkit-transition: all 0.7s ease-out;
+    -o-transition: all 0.7s ease-out;
+    transition: all 0.7s ease-out; }
     .submenu__item:hover {
       border-bottom: solid 1px #6cc8e9; }
     .submenu__item--a {
@@ -452,13 +552,13 @@ ol > li > ul > li {
   position: relative;
   height: auto; }
 
-ol > li:hover > ul {
+ol > li:hover > .submenu {
   display: block;
   background-color: #2d3e50;
   position: absolute;
   top: 3rem; }
   @media screen and (max-width: 700px) {
-    ol > li:hover > ul {
+    ol > li:hover > .submenu {
       position: relative;
       height: auto;
       top: 0; } }
