@@ -354,9 +354,6 @@ body {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-      .header__cont--logo-png {
-        width: 195px;
-        height: 127.7px; }
     .header__cont--mail {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -405,15 +402,66 @@ body {
       list-style-type: none;
       margin: 1rem 0.6rem; }
       .navigation__cont--item--a {
+        display: block;
         -ms-touch-action: manipulation;
             touch-action: manipulation;
         text-decoration: none;
         color: white;
         text-transform: uppercase;
-        font-size: 14px;
-        padding: 15px; }
-        .navigation__cont--item--a:hover {
+        font-size: 1rem;
+        padding: 1rem; }
+        .navigation__cont--item--a:hover :active :focus {
           color: #19adee; }
+          @media screen and (max-width: 700px) {
+            .navigation__cont--item--a:hover :active :focus {
+              border-bottom: solid 2px #6cc8e9; } }
+
+.submenu {
+  padding: 1rem; }
+  @media screen and (max-width: 700px) {
+    .submenu {
+      -webkit-padding-start: 0px;
+              padding-inline-start: 0px; } }
+  .submenu__item {
+    list-style-type: none;
+    padding-bottom: 5px;
+    margin-bottom: 1rem; }
+    .submenu__item:hover {
+      border-bottom: solid 1px #6cc8e9; }
+    .submenu__item--a {
+      margin-bottom: 0.5rem;
+      color: white;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      text-decoration: none;
+      border-bottom: 1rem; }
+      .submenu__item--a:hover {
+        color: #6cc8e9; }
+
+ol > li > ul {
+  display: none; }
+
+ol > li {
+  height: 2rem;
+  background-color: #2d3e50; }
+  @media screen and (max-width: 700px) {
+    ol > li {
+      height: auto; } }
+
+ol > li > ul > li {
+  position: relative;
+  height: auto; }
+
+ol > li:hover > ul {
+  display: block;
+  background-color: #2d3e50;
+  position: absolute;
+  top: 3rem; }
+  @media screen and (max-width: 700px) {
+    ol > li:hover > ul {
+      position: relative;
+      height: auto;
+      top: 0; } }
 
 .mainSwither__js {
   color: white;
@@ -636,7 +684,7 @@ body {
               touch-action: manipulation;
           text-decoration: none;
           font-size: 1rem;
-          padding: 0.93rem; }
+          padding: 0; }
           .navigation__cont--item--a:hover {
             color: #19adee; }
   .mainSwither__js {
