@@ -410,10 +410,10 @@ body {
         text-transform: uppercase;
         font-size: 1rem;
         padding: 1rem; }
-        .navigation__cont--item--a:hover :active :focus {
+        .navigation__cont--item--a:hover {
           color: #19adee; }
           @media screen and (max-width: 700px) {
-            .navigation__cont--item--a:hover :active :focus {
+            .navigation__cont--item--a:hover {
               border-bottom: solid 2px #6cc8e9; } }
 
 .submenu {
