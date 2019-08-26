@@ -95,7 +95,7 @@ body {
         text-transform: uppercase;
         font-size: 1rem;
         padding: 1rem;
-        &:hover :active :focus{
+        &:hover {
           color: $blue;
           @media screen and (max-width: $phoneSize) {
             border-bottom:solid 2px $submenuHover;
