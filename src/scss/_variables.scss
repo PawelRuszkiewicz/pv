@@ -7,6 +7,16 @@ $mainContener: 1000px;
 $bkgNavColor: #2d3e50;
 
 $phoneSize: 700px;
+// zdjęcia na substronach główne
+
+@mixin automatyka {
+    background-image:url("../assets/img/Fotolia_86887730_Subscription_Monthly_XL-1024x683.jpg");
+}
+@mixin instEl {
+    background-image:url("../assets/img/opt23.jpg");
+}
+
+
 @mixin bootom {
     padding: 10px 15px;
     font-size: 12px;
