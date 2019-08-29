@@ -351,7 +351,8 @@ template {
   max-width: 100%; }
   .articleSub__h2 {
     max-width: 1000px;
-    text-align: center; }
+    text-align: center;
+    margin: 0 auto; }
   .articleSub__section {
     display: -webkit-box;
     display: -ms-flexbox;
