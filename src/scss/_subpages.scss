@@ -90,18 +90,31 @@
   }
 }
 .galery{
-max-width: 100%;
-display: flex;
-flex-wrap: nowrap;
-flex-direction: row;
-@media screen and (max-width: $phoneSize) {
-  flex-direction: column;
-  max-height: 30vh;
-  max-width: 90vw;
+max-width: inherit;
+padding: 0 1rem;
+
+figure{
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  @media screen and (max-width: $phoneSize) {
+    flex-direction: column;
+    justify-content: space-around;
+
+    width: 100%;
+
+  }
 }
   &__Img{
-    padding: 1rem;
-height: 30px;
+    padding: .3rem .5rem;
+    margin-bottom: 1rem;
+    border: solid 1px $blue;
+max-height: 30vh;
 width: auto;
+
   }
 }
