@@ -32,10 +32,12 @@
 }
 .articleSub {
   max-width: 100%;
+  // text-align: center;
 
   &__h2 {
     max-width: $mainContener;
     text-align: center;
+    margin: 0 auto;
   }
   &__section {
     display: flex;
@@ -85,5 +87,21 @@
   padding: 0.5rem 1rem;
   @media screen and (max-width: $phoneSize) {
     display: none;
+  }
+}
+.galery{
+max-width: 100%;
+display: flex;
+flex-wrap: nowrap;
+flex-direction: row;
+@media screen and (max-width: $phoneSize) {
+  flex-direction: column;
+  max-height: 30vh;
+  max-width: 90vw;
+}
+  &__Img{
+    padding: 1rem;
+height: 30px;
+width: auto;
   }
 }
