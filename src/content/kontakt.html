@@ -113,17 +113,27 @@
     <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2442.307848233277!2d16.12379041593687!3d52.25595456351589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4705d4bf7ccc7cfd%3A0x3ec1b5096d7a3828!2sZUEA.Bia%C5%82owski.Automatyka%20i%20Fotowoltaika!5e0!3m2!1spl!2spl!4v1567180192506!5m2!1spl!2spl"  frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 </div>
 <div class="contactContener">
-        <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/YOUR_EMAIL_HERE" method="post">
+        <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/protech@pt.home.pl" method="post">
             <fieldset id="fs-frm-inputs">
+
               <label for="full-name">Imię Nazwisko</label>
               <input type="text" name="name" id="full-name" placeholder="Podaj Imię" required="">
+
               <label for="email-address">Email adres:</label>
               <input type="email" name="_replyto" id="email-address" placeholder="email@domain.pl" required="">
+
               <label for="telephone">Numer telefonu (opcja)</label>
               <input type="telephone" name="telephone" id="telephone" placeholder="601234567">
+
               <label for="complaint">Treśc zapytania.</label>
               <textarea rows="6" name="complaint" id="complaint" placeholder="Wpisz tresć zapytania" required=""></textarea>
-              <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
+
+              <input type="hidden" name="_subject" id="email-subject" value="Zapytanie ze strony automatyka.net">
+
+              <input type = "hidden" name = "_ cc" value = "frommi.office@gmail.com" />
+              <input type = "text" name = "_ gotcha" style = "display: none" />
+
+
             </fieldset>
             <input type="submit" value="Wyślij">
           </form>
