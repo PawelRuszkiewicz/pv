@@ -1,6 +1,7 @@
 $violet: rgb(255, 255, 255);
 $blue: rgb(25, 173, 238);
-$white:white;
+$lightblue: rgb(200, 231, 244);
+$white: white;
 $submenuHover: rgb(108, 200, 233);
 $windowSize: 1200px;
 $mainContener: 1000px;
@@ -10,33 +11,30 @@ $phoneSize: 700px;
 // zdjęcia na substronach główne
 
 @mixin automatyka {
-    background-image:url("../assets/img/Fotolia_86887730_Subscription_Monthly_XL-1024x683.jpg");
+  background-image: url("../assets/img/Fotolia_86887730_Subscription_Monthly_XL-1024x683.jpg");
 }
 @mixin instEl {
-    background-image:url("../assets/img/opt23.jpg");
+  background-image: url("../assets/img/opt23.jpg");
 }
-
 
 @mixin bootom {
-    padding: 10px 15px;
-    font-size: 12px;
+  padding: 10px 15px;
+  font-size: 12px;
 }
 @mixin mainContener {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    min-height: 10rem;
-    border-bottom: solid 1px $blue;
-    margin: 1.5rem 0 2rem;
-
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  min-height: 10rem;
+  border-bottom: solid 1px $blue;
+  margin: 1.5rem 0 2rem;
 }
 @mixin mainContenerPhone {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    flex-direction: column;
-    min-height: 10rem;
-    border-bottom: solid 1px $blue;
-    margin: 1.5rem 0 2rem;
-
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  min-height: 10rem;
+  border-bottom: solid 1px $blue;
+  margin: 1.5rem 0 2rem;
 }
