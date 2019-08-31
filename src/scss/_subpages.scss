@@ -19,6 +19,12 @@
 .imgInstEl {
   @include instEl;
 }
+.sterowanie{
+  @include sterowanie;
+}
+
+
+
 .textOnBc {
   font-size: 2rem;
   font-weight: 700;
@@ -47,6 +53,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     max-width: $windowSize;
+    margin: 0 auto;
     padding: 2rem 1rem 0 1rem;
     justify-content: center;
     @media screen and (max-width: $phoneSize) {
@@ -124,4 +131,28 @@
 // li class deleted disc style list
 .widthOutDisc {
   list-style-type: none;
+}
+// style dla buttonow wyk jako submenu--> do zrobienia przewijanie..!!!!
+.buton{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-evenly;
+@media screen and (max-width: $phoneSize) {
+  flex-direction: column;
+  justify-content: center;
+}
+}
+.subMenu{
+height: 3rem;
+padding: 0 2rem;
+background-color: $lightblue;
+
+  &-a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $bkgNavColor;
+    font-weight: 700;
+
+  }
 }

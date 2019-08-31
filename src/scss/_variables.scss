@@ -17,6 +17,10 @@ $phoneSize: 700px;
   background-image: url("../assets/img/opt23.jpg");
 }
 
+@mixin sterowanie {
+  background-image: url("../assets/img/sysnaw.jpg");
+}
+
 @mixin bootom {
   padding: 10px 15px;
   font-size: 12px;
