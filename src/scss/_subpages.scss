@@ -13,6 +13,8 @@
     max-height: 10rem;
   }
 }
+
+// okreslenie przewodniego zdjęcia na stronie- przypisanie w variables do mixinu
 .imgAutom {
   @include automatyka;
 }
@@ -59,7 +61,10 @@
     @media screen and (max-width: $phoneSize) {
       flex-direction: column;
     }
+&--ul{
+  list-style-type: circle;
 
+}
 
   &--h {
     width: 100%;
