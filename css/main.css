@@ -443,6 +443,58 @@ template {
     max-height: 30vh;
     width: auto; }
 
+.mapa {
+  width: 100%;
+  height: 600px;
+  padding: 2rem 0; }
+
+.invisible {
+  display: none; }
+
+.contactContener {
+  padding: 1rem;
+  width: 85vw;
+  text-align: center;
+  margin: 0 auto; }
+
+fieldset {
+  text-align: left;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  padding: 1rem;
+  border: double 5px #19adee;
+  color: #19adee;
+  font-weight: 600; }
+
+#fs-frm {
+  margin-top: 5vh; }
+  #fs-frm-inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+.formInput {
+  width: 100%;
+  height: 2rem;
+  font-size: 0.7rem;
+  background-color: #c8e7f4; }
+  .formInput-textarea {
+    height: 5rem; }
+  .formInput-submit {
+    margin: 0.5rem;
+    padding: 0.3rem;
+    width: 5rem;
+    height: 2rem;
+    border: solid 2px #19adee; }
+    .formInput-submit:hover {
+      background-color: #c8e7f4; }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
