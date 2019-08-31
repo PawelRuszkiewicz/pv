@@ -335,6 +335,9 @@ template {
 .imgInstEl {
   background-image: url("../assets/img/opt23.jpg"); }
 
+.sterowanie {
+  background-image: url("../assets/img/sysnaw.jpg"); }
+
 .textOnBc {
   font-size: 2rem;
   font-weight: 700;
@@ -364,6 +367,7 @@ template {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     max-width: 1200px;
+    margin: 0 auto;
     padding: 2rem 1rem 0 1rem;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -445,6 +449,39 @@ template {
 
 .widthOutDisc {
   list-style-type: none; }
+
+.buton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+  @media screen and (max-width: 700px) {
+    .buton {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+
+.subMenu {
+  height: 3rem;
+  padding: 0 2rem;
+  background-color: #c8e7f4; }
+  .subMenu-a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #2d3e50;
+    font-weight: 700; }
 
 .mapa {
   width: 100%;
