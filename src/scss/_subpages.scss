@@ -13,10 +13,10 @@
     max-height: 10rem;
   }
 }
-.imgAutom{
+.imgAutom {
   @include automatyka;
 }
-.imgInstEl{
+.imgInstEl {
   @include instEl;
 }
 .textOnBc {
@@ -30,6 +30,9 @@
 .spanBold {
   font-weight: 700;
 }
+
+
+
 .articleSub {
   max-width: 100%;
   // text-align: center;
@@ -49,39 +52,41 @@
     @media screen and (max-width: $phoneSize) {
       flex-direction: column;
     }
-    &--h {
+
+
+  &--h {
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem 0.5rem;
+    border-bottom: solid 1.5px $blue;
+    border-top: solid 0.5px $blue;
+  }
+  &--li {
+    padding: 1rem 1rem 1rem 0;
+    text-align: justify;
+  }
+  &--inSection {
+    max-width: 45%;
+    min-width: 18.75rem;
+    overflow: hidden;
+    padding: 0.5rem 1rem;
+    text-align: justify;
+    @media screen and (max-width: $phoneSize) {
       width: 100%;
-      font-weight: 600;
-      text-align: center;
-      text-transform: uppercase;
-      padding: .5rem 1rem .5rem;
-      border-bottom: solid 1.5px $blue;
-      border-top: solid 0.5px $blue;
-    }
-    &--li {
-      padding: 1rem 1rem 1rem 0;
+      max-width: 100%;
       text-align: justify;
-    }
-    &--inSection {
-      max-width: 45%;
-      min-width: 18.75rem;
-      overflow: hidden;
-      padding: 0.5rem 1rem;
-      text-align: justify;
-      @media screen and (max-width: $phoneSize) {
-        width: 100%;
-        max-width: 100%;
-        text-align: justify;
-      }
     }
   }
 }
-.inSection__img{
-    max-width: 45%;
-    overflow: hidden;
+}
+
+.inSection__img {
+  max-width: 45%;
+  overflow: hidden;
 }
 .section--img {
-
   min-width: 18.75rem;
 
   padding: 0.5rem 1rem;
@@ -89,32 +94,34 @@
     display: none;
   }
 }
-.galery{
-max-width: inherit;
-padding: 0 1rem;
+.galery {
+  max-width: inherit;
+  padding: 0 1rem;
 
-figure{
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex-direction: row;
-
-  @media screen and (max-width: $phoneSize) {
-    flex-direction: column;
+  figure {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
 
-    width: 100%;
+    @media screen and (max-width: $phoneSize) {
+      flex-direction: column;
+      justify-content: space-around;
 
+      width: 100%;
+    }
   }
-}
-  &__Img{
-    padding: .3rem .5rem;
+  &__Img {
+    padding: 0.3rem 0.5rem;
     margin-bottom: 1rem;
     border: solid 1px $blue;
-max-height: 30vh;
-width: auto;
-
+    max-height: 30vh;
+    width: auto;
   }
+}
+// li class deleted disc style list
+.widthOutDisc {
+  list-style-type: none;
 }
