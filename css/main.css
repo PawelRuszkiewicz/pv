@@ -499,9 +499,10 @@ template {
 
 .contactContener {
   padding: 1rem;
-  width: 85vw;
+  max-width: inherit;
   text-align: center;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin: 0; }
 
 fieldset {
   text-align: left;
@@ -512,7 +513,8 @@ fieldset {
   padding: 1rem;
   border: double 5px #19adee;
   color: #19adee;
-  font-weight: 600; }
+  font-weight: 600;
+  max-width: 1200px; }
 
 #fs-frm {
   margin-top: 5vh; }
