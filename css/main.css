@@ -378,6 +378,8 @@ template {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column; } }
+    .articleSub__section--ul {
+      list-style-type: circle; }
     .articleSub__section--h {
       width: 100%;
       font-weight: 600;
@@ -482,6 +484,10 @@ template {
     text-transform: uppercase;
     color: #2d3e50;
     font-weight: 700; }
+
+.toLeft {
+  width: 100%;
+  margin-left: 1rem; }
 
 .mapa {
   width: 100%;
