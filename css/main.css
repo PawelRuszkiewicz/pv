@@ -512,7 +512,7 @@ fieldset {
           margin-block-end: 0;
   padding: 1rem;
   border: double 5px #19adee;
-  color: #19adee;
+  color: #0d4480;
   font-weight: 600;
   max-width: 1200px; }
 
@@ -837,10 +837,12 @@ ol > li:hover > .submenu {
   color: white; }
   .bootom__1 {
     padding: 10px 15px;
-    font-size: 12px; }
+    font-size: 14px;
+    font-weight: 700; }
   .bootom__2 {
     padding: 10px 15px;
-    font-size: 12px; }
+    font-size: 14px;
+    font-weight: 700; }
 
 @media screen and (max-width: 700px) {
   .header {
