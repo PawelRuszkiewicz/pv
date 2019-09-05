@@ -24,7 +24,9 @@
 .sterowanie{
   @include sterowanie;
 }
-
+.pv{
+  @include pv;
+}
 
 
 .textOnBc {
@@ -165,4 +167,8 @@ background-color: $lightblue;
 .toLeft{
   width: 100%;
   margin-left: 1rem;
+}
+// higer mtop margin in element
+.more{
+  margin-top: 2rem;
 }

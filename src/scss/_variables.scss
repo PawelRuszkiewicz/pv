@@ -21,6 +21,9 @@ $phoneSize: 700px;
 @mixin sterowanie {
   background-image: url("../assets/img/sysnaw.jpg");
 }
+@mixin pv {
+  background-image: url("../assets/img/pv.jpg");
+}
 
 @mixin bootom {
   padding: 10px 15px;
