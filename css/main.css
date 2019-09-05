@@ -338,6 +338,9 @@ template {
 .sterowanie {
   background-image: url("../assets/img/sysnaw.jpg"); }
 
+.pv {
+  background-image: url("../assets/img/pv.jpg"); }
+
 .textOnBc {
   font-size: 2rem;
   font-weight: 700;
@@ -488,6 +491,9 @@ template {
 .toLeft {
   width: 100%;
   margin-left: 1rem; }
+
+.more {
+  margin-top: 2rem; }
 
 .mapa {
   width: 100%;
