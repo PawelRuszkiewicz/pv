@@ -21,13 +21,12 @@
 .imgInstEl {
   @include instEl;
 }
-.sterowanie{
+.sterowanie {
   @include sterowanie;
 }
-.pv{
+.pv {
   @include pv;
 }
-
 
 .textOnBc {
   font-size: 2rem;
@@ -40,8 +39,6 @@
 .spanBold {
   font-weight: 700;
 }
-
-
 
 .articleSub {
   max-width: 100%;
@@ -63,46 +60,51 @@
     @media screen and (max-width: $phoneSize) {
       flex-direction: column;
     }
-&--ul{
-  list-style-type: circle;
+    &--ul {
+      list-style-type: circle;
+    }
 
-}
-
-  &--h {
-    width: 100%;
-    font-weight: 600;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 0.5rem 1rem 0.5rem;
-    border-bottom: solid 1.5px $blue;
-    border-top: solid 0.5px $blue;
-  }
-  &--li {
-    padding: 1rem 1rem 1rem 0;
-    text-align: justify;
-  }
-  &--inSection {
-    max-width: 45%;
-    min-width: 18.75rem;
-    overflow: hidden;
-    padding: 0.5rem 1rem;
-    text-align: justify;
-    @media screen and (max-width: $phoneSize) {
+    &--h {
       width: 100%;
-      max-width: 100%;
+      font-weight: 600;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 0.5rem 1rem 0.5rem;
+      border-bottom: solid 1.5px $blue;
+      border-top: solid 0.5px $blue;
+    }
+    &--li {
+      padding: 1rem 1rem 1rem 0;
       text-align: justify;
     }
+    &--inSection {
+      max-width: 45%;
+      min-width: 18.75rem;
+      overflow: hidden;
+      padding: 0.5rem 1rem;
+      text-align: justify;
+      @media screen and (max-width: $phoneSize) {
+        width: 100%;
+        max-width: 100%;
+        text-align: justify;
+      }
+    }
   }
-}
 }
 
 .inSection__img {
   max-width: 45%;
   overflow: hidden;
-}
+
+&--max{
+  // max-width: 100%;
+  width: auto;
+  margin: 2rem 0;
+  padding: 5px;
+}}
 .section--img {
   min-width: 18.75rem;
-
+  width: 100%;
   padding: 0.5rem 1rem;
   @media screen and (max-width: $phoneSize) {
     display: none;
@@ -140,35 +142,34 @@
   list-style-type: none;
 }
 // style dla buttonow wyk jako submenu--> do zrobienia przewijanie..!!!!
-.buton{
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: space-evenly;
-@media screen and (max-width: $phoneSize) {
-  flex-direction: column;
-  justify-content: center;
+.buton {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  @media screen and (max-width: $phoneSize) {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
-}
-.subMenu{
-height: 3rem;
-padding: 0 2rem;
-background-color: $lightblue;
+.subMenu {
+  height: 3rem;
+  padding: 0 2rem;
+  background-color: $lightblue;
 
-  &-a{
+  &-a {
     text-decoration: none;
     text-transform: uppercase;
     color: $bkgNavColor;
     font-weight: 700;
-
   }
 }
 // element p z klasą toLeft ustawiający napisy od lewej disp block.
-.toLeft{
+.toLeft {
   width: 100%;
   margin-left: 1rem;
 }
 // higer mtop margin in element
-.more{
+.more {
   margin-top: 2rem;
 }
