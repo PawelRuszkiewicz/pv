@@ -409,9 +409,14 @@ template {
 .inSection__img {
   max-width: 45%;
   overflow: hidden; }
+  .inSection__img--max {
+    width: auto;
+    margin: 2rem 0;
+    padding: 5px; }
 
 .section--img {
   min-width: 18.75rem;
+  width: 100%;
   padding: 0.5rem 1rem; }
   @media screen and (max-width: 700px) {
     .section--img {
