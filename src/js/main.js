@@ -12,3 +12,13 @@ switchMenu.addEventListener('click', (e) => {
     };
 
 })
+
+// api solar edge
+
+fetch("https://monitoringapi.solaredge.com/site/773805/envBenefits?systemUnits=Metrics&api_key=ETC41O3HJUC3ACS3TJI17ODKEBVM3AI3")
+.then(resp => resp.json())
+.then(resp =>{
+document.querySelector(".co2--js").innerHTML='resp';
+console.log(resp);
+return resp;
+})
