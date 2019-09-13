@@ -500,6 +500,77 @@ template {
 .more {
   margin-top: 2rem; }
 
+.ledContener {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 0 2rem;
+  margin: 0;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #19adee; }
+  @media screen and (max-width: 700px) {
+    .ledContener {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  .ledContener__img {
+    margin: 1rem 2rem;
+    max-height: 300px;
+    max-width: 300px; }
+    @media screen and (max-width: 700px) {
+      .ledContener__img {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+    .ledContener__img--images {
+      max-height: inherit;
+      max-width: inherit; }
+  .ledContener__text {
+    padding: 1rem;
+    width: 100%;
+    text-align: center; }
+    .ledContener__text--model {
+      width: 60%;
+      padding: 8px 16px;
+      margin: 0 auto;
+      background: #19adee;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 10px; }
+
+.pLed {
+  margin: 0; }
+
+.ledCena {
+  text-transform: uppercase;
+  font-weight: 600; }
+
+.shadowBlue {
+  -webkit-box-shadow: 20px 20px 120px 10px #90d3f0;
+          box-shadow: 20px 20px 120px 10px #90d3f0; }
+
+.shadowYellow {
+  -webkit-box-shadow: 20px 20px 120px 10px #f2e89d;
+          box-shadow: 20px 20px 120px 10px #f2e89d; }
+
+.shadowGreen {
+  -webkit-box-shadow: 20px 20px 120px 10px #bef4b9;
+          box-shadow: 20px 20px 120px 10px #bef4b9; }
+
 .mapa {
   width: 100%;
   height: 600px;
