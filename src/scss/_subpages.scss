@@ -96,12 +96,13 @@
   max-width: 45%;
   overflow: hidden;
 
-&--max{
-  // max-width: 100%;
-  width: auto;
-  margin: 2rem 0;
-  padding: 5px;
-}}
+  &--max {
+    // max-width: 100%;
+    width: auto;
+    margin: 2rem 0;
+    padding: 5px;
+  }
+}
 .section--img {
   min-width: 18.75rem;
   width: 100%;
@@ -172,4 +173,76 @@
 // higer mtop margin in element
 .more {
   margin-top: 2rem;
+}
+// sytle dla oswietlenia ogrodowego- sekcje sprzedażowe do pozniejszego uzupelniania z bazy danych na serwerze
+
+.ledContener {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 2rem;
+  margin:0;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid $blue;
+
+  @media screen and (max-width: $phoneSize) {
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__img {
+margin: 1rem 2rem;
+    max-height: 300px;
+    max-width: 300px;
+
+
+    @media screen and (max-width: $phoneSize) {
+
+      justify-content: center;
+    }
+    &--images {
+    max-height:inherit;
+    max-width: inherit;
+    }
+  }
+  &__text {
+padding: 1rem;
+width: 100%;
+text-align: center;
+
+
+    &--model {
+
+      width: 60%;
+      padding:8px 16px;
+      margin:0 auto;
+      background: $blue;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+
+    }
+  }
+}
+.pLed{
+  margin: 0;
+}
+.ledCena{
+  text-transform: uppercase;
+    font-weight: 600;
+}
+// shadow for img in led
+.shadowBlue{
+box-shadow: 20px 20px 120px 10px $blueShadow;
+
+}
+.shadowYellow{
+  box-shadow: 20px 20px 120px 10px $yellowShadow;
+
+}
+.shadowGreen{
+  box-shadow: 20px 20px 120px 10px $shadowGreen;
 }
