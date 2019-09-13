@@ -1,0 +1,248 @@
+.pictureAutomatyka {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  height: 25rem;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center -3rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  @media screen and (max-width: $phoneSize) {
+    max-height: 10rem;
+  }
+}
+
+// okreslenie przewodniego zdjęcia na stronie- przypisanie w variables do mixinu
+.imgAutom {
+  @include automatyka;
+}
+.imgInstEl {
+  @include instEl;
+}
+.sterowanie {
+  @include sterowanie;
+}
+.pv {
+  @include pv;
+}
+
+.textOnBc {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.autoprzem {
+  flex-wrap: wrap;
+}
+.spanBold {
+  font-weight: 700;
+}
+
+.articleSub {
+  max-width: 100%;
+  // text-align: center;
+
+  &__h2 {
+    max-width: $mainContener;
+    text-align: center;
+    margin: 0 auto;
+  }
+  &__section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: $windowSize;
+    margin: 0 auto;
+    padding: 2rem 1rem 0 1rem;
+    justify-content: center;
+    @media screen and (max-width: $phoneSize) {
+      flex-direction: column;
+    }
+    &--ul {
+      list-style-type: circle;
+    }
+
+    &--h {
+      width: 100%;
+      font-weight: 600;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 0.5rem 1rem 0.5rem;
+      border-bottom: solid 1.5px $blue;
+      border-top: solid 0.5px $blue;
+    }
+    &--li {
+      padding: 1rem 1rem 1rem 0;
+      text-align: justify;
+    }
+    &--inSection {
+      max-width: 45%;
+      min-width: 18.75rem;
+      overflow: hidden;
+      padding: 0.5rem 1rem;
+      text-align: justify;
+      @media screen and (max-width: $phoneSize) {
+        width: 100%;
+        max-width: 100%;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+.inSection__img {
+  max-width: 45%;
+  overflow: hidden;
+
+  &--max {
+    // max-width: 100%;
+    width: auto;
+    margin: 2rem 0;
+    padding: 5px;
+  }
+}
+.section--img {
+  min-width: 18.75rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  @media screen and (max-width: $phoneSize) {
+    display: none;
+  }
+}
+.galery {
+  max-width: inherit;
+  padding: 0 1rem;
+
+  figure {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    @media screen and (max-width: $phoneSize) {
+      flex-direction: column;
+      justify-content: space-around;
+
+      width: 100%;
+    }
+  }
+  &__Img {
+    padding: 0.3rem 0.5rem;
+    margin-bottom: 1rem;
+    border: solid 1px $blue;
+    max-height: 30vh;
+    width: auto;
+  }
+}
+// li class deleted disc style list
+.widthOutDisc {
+  list-style-type: none;
+}
+// style dla buttonow wyk jako submenu--> do zrobienia przewijanie..!!!!
+.buton {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  @media screen and (max-width: $phoneSize) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.subMenu {
+  height: 3rem;
+  padding: 0 2rem;
+  background-color: $lightblue;
+
+  &-a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $bkgNavColor;
+    font-weight: 700;
+  }
+}
+// element p z klasą toLeft ustawiający napisy od lewej disp block.
+.toLeft {
+  width: 100%;
+  margin-left: 1rem;
+}
+// higer mtop margin in element
+.more {
+  margin-top: 2rem;
+}
+// sytle dla oswietlenia ogrodowego- sekcje sprzedażowe do pozniejszego uzupelniania z bazy danych na serwerze
+
+.ledContener {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 2rem;
+  margin:0;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid $blue;
+
+  @media screen and (max-width: $phoneSize) {
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__img {
+margin: 1rem 2rem;
+    max-height: 300px;
+    max-width: 300px;
+
+
+    @media screen and (max-width: $phoneSize) {
+
+      justify-content: center;
+    }
+    &--images {
+    max-height:inherit;
+    max-width: inherit;
+    }
+  }
+  &__text {
+padding: 1rem;
+width: 100%;
+text-align: center;
+
+
+    &--model {
+
+      width: 60%;
+      padding:8px 16px;
+      margin:0 auto;
+      background: $blue;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+
+    }
+  }
+}
+.pLed{
+  margin: 0;
+}
+.ledCena{
+  text-transform: uppercase;
+    font-weight: 600;
+}
+// shadow for img in led
+.shadowBlue{
+box-shadow: 20px 20px 120px 10px $blueShadow;
+
+}
+.shadowYellow{
+  box-shadow: 20px 20px 120px 10px $yellowShadow;
+
+}
+.shadowGreen{
+  box-shadow: 20px 20px 120px 10px $shadowGreen;
+}

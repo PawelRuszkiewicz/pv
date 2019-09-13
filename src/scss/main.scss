@@ -1,16 +1,430 @@
 @import "_normalize";
 @import "_variables";
-
+@import "_subpages";
+@import "_kontakt";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,800|Roboto:400,500,700&display=swap");
 
 html {
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  // font-family: 'Roboto', sans-serif;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  background: none;
+  font-size: 16px;
+}
+.header {
+  height: 9rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  &__a {
+    font-family: "Open San", sans-serif;
+    font-weight: 500;
+    line-height: 25px;
+    font-size: 1rem;
+    color: rgb(15, 48, 116);
+    text-decoration: none;
+  }
+  &__cont {
+    margin: auto auto;
+    max-width: $windowSize;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &--logo {
+      display: flex;
+      // &-png {
+      //   // width: 195px;
+      //   // height: 127.7px;
+      // }
+    }
+    &--mail {
+      display: flex;
+      padding: 1rem 1.9rem;
+
+      &-email {
+        margin: 0 50px 0 0;
+      }
+      // &--phone {
+      // }
+    }
+  }
+}
+.phoneSvg {
+  fill: blue;
+  width: 1rem;
+}
+.st0 {
+  height: 10px;
+  width: 10px;
+  fill: red;
+}
+.navigation {
+  background-color: $bkgNavColor;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  min-height: 4rem;
+  width: 100%;
+  &__cont {
+    width: $windowSize;
+
+    &--contUl {
+      display: flex;
+      justify-content: space-around;
+
+      padding: 0;
+      margin: 0;
+      flex-direction: row;
+    }
+    &--item {
+      list-style-type: none;
+      margin: 1rem 0.6rem;
+      &--a {
+        display: block;
+        touch-action: manipulation;
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1rem;
+        padding: 1rem;
+        transition: border-bottom 0.8s ease-out;
+
+        &:hover {
+          color: $blue;
+          @media screen and (max-width: $phoneSize) {
+            border-bottom: solid 1px $submenuHover;
+          }
+        }
+      }
+    }
+  }
+}
+// stylizacja submenu--
+.submenu {
+  padding: 1rem;
+
+  @media screen and (max-width: $phoneSize) {
+    padding-inline-start: 0px;
+  }
+  &__item {
+    list-style-type: none;
+    padding-bottom: 5px;
+    margin-bottom: 1rem;
+    transition: all 0.7s ease-out;
+    &:hover {
+      border-bottom: solid 1px $submenuHover;
+    }
+    &--a {
+      margin-bottom: 0.5rem;
+      color: $white;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      text-decoration: none;
+      border-bottom: 1rem;
+
+      &:hover {
+        color: $submenuHover;
+      }
+    }
+  }
+}
+// chowane menu
+ol > li > ul {
+  display: none;
+
+  // disp==>none
+}
+ol > li {
+  height: 2rem;
+  background-color: $bkgNavColor;
+
+  @media screen and (max-width: $phoneSize) {
+    height: auto;
+  }
+}
+ol > li > ul > li {
+  position: relative;
+  height: auto;
+}
+ol > li:hover > .submenu {
+  display: block;
+  background-color: $bkgNavColor;
+  position: absolute;
+  top: 3rem;
+  @media screen and (max-width: $phoneSize) {
+    position: relative;
+    height: auto;
+    top: 0;
+  }
+}
+
+.mainSwither__js {
+  color: $white;
+  font-size: 3rem;
+  padding: 0 1rem;
+  justify-content: flex-end;
+  display: none;
+}
+// background  image
+.picture {
+  height: 100%;
+  width: 100%;
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// Main
+.main {
+  display: flex;
+  justify-content: center;
+
+  &__contener {
+    width: $mainContener;
+    margin: 10px, auto;
+
+    &--offerHeader {
+      // nasza oferta
+      color: $bkgNavColor;
+      font-family: Roboto;
+      text-transform: uppercase;
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-align: center;
+      padding: 2.5rem 0 4rem 0;
+      border-bottom: solid 1.5px $blue;
+      margin-bottom: 2rem;
+    }
+
+    &--svgLink {
+      // contener svg main
+      display: block;
+
+      &-svgBox {
+        // element svg & text
+        color: $blue;
+        font-family: Roboto;
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+        font-weight: 600;
+        line-height: 1.25rem;
+        font-size: 1.25rem;
+        padding: 0.5rem 2rem;
+      }
+    }
+  }
+}
+//main contener
+.contener__first {
+  @include mainContener;
+}
+.contener__second {
+  @include mainContener;
+}
+
+.main__list {
+  list-style-type: circle;
+  text-align: left;
+  &--item {
+    color: $bkgNavColor;
+    font-family: "Open Sans", sans-serif;
+    text-transform: lowercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+}
+
+// footer
+.footer {
+  background-color: $blue;
+
+  &__cont {
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 0 1rem 0;
+    max-width: $windowSize;
+    &--1 {
+      font-family: "Roboto", sans-serif;
+      text-transform: uppercase;
+      font-size: 36px;
+      font-weight: 600;
+      letter-spacing: 1.3px;
+      color: $white;
+    }
+    &--2 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: 1.3px;
+      color: $white;
+    }
+  }
+}
+
+.break {
+  // przerwa w stopce
+  min-height: 80px;
+  background-color: $white;
+}
+
+// bootom of page
+.bootom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 15px;
+  height: 40px;
+  width: 100%;
+  background-color: $blue;
+  color: $white;
+  &__1 {
+    @include bootom;
+  }
+  &__2 {
+    @include bootom;
+  }
+}
+// *********************************************************
+// Media dla telefonów max rozmiar wielkosc okma 650px.
+// **********************************************************
+@media screen and (max-width: $phoneSize) {
+  .header {
+    height: 100%;
+    padding: 0.5rem 1rem;
+    align-items: center;
+    &__a {
+      line-height: 1.5rem;
+    }
+    &__cont {
+      margin: auto auto;
+      max-width: $windowSize;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &--logo {
+        display: flex;
+        justify-content: center;
+        &-png {
+          width: 100px;
+          height: 65.48px;
+        }
+      }
+      &--mail {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        padding: 1rem 1.9rem;
+        &-email {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    width: 100%;
+    &__cont {
+      width: $windowSize;
+
+      &--contUl {
+        display: none;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+        &-visible {
+          display: flex;
+        }
+      }
+
+      &--item {
+        text-align: center;
+
+        &--a {
+          touch-action: manipulation;
+          text-decoration: none;
+          font-size: 1rem;
+          padding: 0;
+          &:hover {
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+  .mainSwither__js {
+    // color: $white;
+    // font-size: 3rem;
+    // padding: 0 1rem;
+    // justify-content: flex-end;
+    // // display:flex;
+    display: flex;
+  }
+
+  // Main
+  .main {
+    display: flex;
+    justify-content: center;
+
+    &__contener {
+      max-width: $mainContener;
+      &-svgBox {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  //main contener
+  .contener__first {
+    @include mainContenerPhone;
+  }
+  .contener__second {
+    @include mainContenerPhone;
+  }
+
+  .main__list {
+    list-style-type: circle;
+    text-align: left;
+  }
+
+  // footer
+  .footer {
+    &__cont {
+      padding: 2rem 1rem 1rem 1rem;
+    }
+  }
+
+  .break {
+    // przerwa w stopce
+    min-height: 80px;
+    background-color: $white;
+  }
+
+  // bootom of page
+  .bootom {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+
+  }
 }
