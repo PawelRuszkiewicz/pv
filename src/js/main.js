@@ -15,7 +15,7 @@ switchMenu.addEventListener('click', (e) => {
 
 // api solar edge saved in assets
 const place = document.querySelector(".co2--js");
-fetch("../assets/response.json")
+fetch("assets/response.json")
 .then(resp => resp.json())
 .then(resp => {
 console.log(resp);
