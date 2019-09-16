@@ -14,11 +14,18 @@ switchMenu.addEventListener('click', (e) => {
 })
 
 // api solar edge
-
-fetch("https://monitoringapi.solaredge.com/site/773805/envBenefits?systemUnits=Metrics&api_key=ETC41O3HJUC3ACS3TJI17ODKEBVM3AI3")
+const place = document.querySelector(".co2--js");
+fetch("../assets/response.json")
 .then(resp => resp.json())
-.then(resp =>{
-document.querySelector(".co2--js").innerHTML='resp';
+.then(resp => {
 console.log(resp);
-return resp;
+ const dataSE = resp;
+// for(const dataSE of tables){
+ place.innerHTML= `<p> "${Math.round(dataSE.envBenefits.gasEmissionSaved.co2 * 100)/100} kilogramów"</p>`
+
+// <p> "${Math.round(dataSE.envBenefits.lightBulbs * 100)/100} ilosć żarówek "</p>
 })
+.catch(err =>{
+    console.log(err);
+})
+console.log("zrobine?");
