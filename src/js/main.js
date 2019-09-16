@@ -13,7 +13,7 @@ switchMenu.addEventListener('click', (e) => {
 
 })
 
-// api solar edge
+// api solar edge saved in assets
 const place = document.querySelector(".co2--js");
 fetch("../assets/response.json")
 .then(resp => resp.json())
@@ -28,4 +28,8 @@ console.log(resp);
 .catch(err =>{
     console.log(err);
 })
-console.log("zrobine?");
+
+
+const dataSEphp = "<?= $tabEmiss ?>";
+place.innerHTML= `<p> "${Math.round(dataSEphp.envBenefits.gasEmissionSaved.co2 * 100)/100} KILOgramów"</p>`;
+console.log(dataSEphp);
