@@ -21,15 +21,27 @@ fetch("assets/response.json")
 console.log(resp);
  const dataSE = resp;
 // for(const dataSE of tables){
- place.innerHTML= `<p> "${Math.round(dataSE.envBenefits.gasEmissionSaved.co2 * 100)/100} kilogramów"</p>`
+ place.innerHTML= `<p> ${Math.round(dataSE.envBenefits.gasEmissionSaved.co2 * 100)/100} kilogramów</p>`
 
-// <p> "${Math.round(dataSE.envBenefits.lightBulbs * 100)/100} ilosć żarówek "</p>
+
 })
 .catch(err =>{
     console.log(err);
 })
+//przewijanie strony
+const piecz = document.querySelector('.pieczS');
+const komp = document.querySelector('.kompS');
+
+function scroll(){
+if(piecz){
+    document.getElementById('piecz').scrollIntoView({behavior: 'smooth'});
+}
 
 
-const dataSEphp = "<?= $tabEmiss ?>";
-place.innerHTML= `<p> ${Math.round(dataSEphp.envBenefits.gasEmissionSaved.co2 * 100)/100} KILOgramów</p>`;
-console.log(dataSEphp);
+    document.querySelector('#komp').scrollIntoView({behavior: 'smooth'});
+}
+
+document.querySelector('.pieczS').addEventListener("click", () =>  {
+    scroll();
+    console.log('kliknieto przycisk');
+})

@@ -188,7 +188,13 @@
   $tabEmiss = $getApiEmission();
 
   ?>
+<script>
 
+// const dataSEphp = "<?= $tabEmiss ?>";
+// place.innerHTML= `<p> ${Math.round(dataSEphp.envBenefits.gasEmissionSaved.co2 * 100)/100} KILOgramów</p>`;
+// console.log(dataSEphp);
+
+</script>
 
 
 
