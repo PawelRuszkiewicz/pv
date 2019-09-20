@@ -13,35 +13,21 @@ switchMenu.addEventListener('click', (e) => {
 
 })
 
-// api solar edge saved in assets
-const place = document.querySelector(".co2--js");
-fetch("assets/response.json")
-.then(resp => resp.json())
-.then(resp => {
-console.log(resp);
- const dataSE = resp;
-// for(const dataSE of tables){
- place.innerHTML= `<p> ${Math.round(dataSE.envBenefits.gasEmissionSaved.co2 * 100)/100} kilogramów</p>`
 
-
-})
-.catch(err =>{
-    console.log(err);
-})
 //przewijanie strony
-const piecz = document.querySelector('.pieczS');
-const komp = document.querySelector('.kompS');
+// const piecz = document.querySelector('.pieczS');
+// const komp = document.querySelector('.kompS');
 
-function scroll(){
-if(piecz){
-    document.getElementById('piecz').scrollIntoView({behavior: 'smooth'});
-}
+// function scroll(){
+// if(piecz){
+//     document.getElementById('piecz').scrollIntoView({behavior: 'smooth'});
+// }
 
 
-    document.querySelector('#komp').scrollIntoView({behavior: 'smooth'});
-}
+//     document.querySelector('#komp').scrollIntoView({behavior: 'smooth'});
+// }
 
-document.querySelector('.pieczS').addEventListener("click", () =>  {
-    scroll();
-    console.log('kliknieto przycisk');
-})
+// document.querySelector('.pieczS').addEventListener("click", () =>  {
+//     scroll();
+//     console.log('kliknieto przycisk');
+// })
